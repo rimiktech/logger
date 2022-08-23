@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error Log /</title>
+</head>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: arial, sans-serif;
+
+  }
+
+  table {
+   
+    border-collapse: collapse;    
+    margin-top: 5px;
+    border: 1px solid #b1b1b1;
+    width: 100%;
+
+  }
+
+  thead tr,
+  th {
+    background-color: #4b70ff;
+    color: #fff;
+
+  }
+
+  td,
+  th {
+    border: 1px solid #b1b1b1;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #dfe0e0;
+  }
+
+  .error_table {
+    margin-top: 2rem;
+  }
+
+  .main_body {
+    margin: 1%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .title_head {
+    color: #5454f7;
+  }
+
+  .togle_button {
+    position: relative;    
+    border: none;
+    /* display: none; */
+    padding: 5px;
+  }
+</style>
+
+<body>
+  <div class="main_body">
+    <h2 class="title_head">Error log for /</h2>
+    <div class="error_table">
+      <p class="drop_down">
+        Showing 1 to 10, Pages:
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+      </p>
+      <!-- table  -->
+      <table>
+        <thead>
+          <tr>
+            <th class="main_th">
+            </th>
+            <th>Time</th>
+            <th>User</th>
+            <th>URL</th>
+            <th>Status</th>
+            <th>
+            </th>
+          </tr>
+        </thead>
+        <tr>
+          <td>
+            <a href="#" class="accordion" onclick="openTable()">+</a>
+          </td>
+          <td>2022-10-01 11:45:12</td>
+          <td>user1</td>
+          <td>/home</td>
+          <td>400</td>
+          <td><a href="#">Detail</a></td>
+        </tr>
+        <!-- div for + button  -->
+        <tr>
+          <td class="togle_button" colspan="6" id="hide_row">
+            <ul class="">
+              <li>This is test message</li>
+              <li>This is another message</li>
+              <li>This is logger message</li>
+            </ul>
+          </td>
+        </tr>
+        <!-- div for + button  -->
+
+        <tr>
+          <td>
+            <a href="#" class="accordion"  onclick="openTable()">+</a>
+          </td>
+          <td>2022-10-01 11:45:12</td>
+          <td>user2</td>
+          <td>/home</td>
+          <td>400</td>
+          <td><a href="#">Detail</a></td>
+        </tr>
+        <!-- div for + button  -->
+        <tr>
+          <td class="togle_button" colspan="6" id="hide_row">
+            <ul>
+              <li>This is test message</li>
+              <li>This is another message</li>
+              <li>This is logger message</li>
+            </ul>
+          </td>
+        </tr>
+        <!-- div for + button  -->
+        <tr>
+          <td><a href="#" class="accordion"  onclick="openTable()">+</a>
+          </td>
+          <td>2022-10-01 11:45:12</td>
+          <td>user3</td>
+          <td>/home</td>
+          <td>400</td>
+          <td><a href="#">Detail</a></td>
+        </tr>
+        <!-- div for + button  -->
+        <tr>
+          <td class="togle_button" colspan="6" id="hide_row">
+            <ul>
+              <li>This is test message</li>
+              <li>This is another message</li>
+              <li>This is logger message</li>
+            </ul>
+          </td>
+        </tr>
+        <!-- div for + button  -->
+      </table>
+    </div>
+  </div>
+ 
+
+</body>
+
+</html>
