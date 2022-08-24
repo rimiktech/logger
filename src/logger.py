@@ -9,8 +9,9 @@ class logger:
         app.wsgi_app = middleware(app.wsgi_app)
         app.add_url_rule("/cja.logger", view_func=HttpHandler.get_viewer)
 
+
     @staticmethod
     def log(message):
-        if "cja.logger" in request.environ and request.environ["cja.logger"]: 
+        if "cja.logger" in request.environ and request.environ["cja.logger"]:
             request.environ["cja.logger"].set_message(message)
         pass
